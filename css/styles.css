@@ -317,10 +317,6 @@ img {
   color: #434455;
 }
 
-.social-links-team {
-  display: flex;
-}
-
 .icon-links-team {
   list-style-type: none;
   display: flex;
@@ -414,8 +410,7 @@ img {
   color: #f4f4fd;
   padding: 40px 32px;
   background-color: #4d5ae5;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .overlay {
@@ -541,16 +536,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
   fill: #f4f4fd;
 }
 
-.footer-list-item:hover,
-.footer-list-item:focus {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #31d0aa;
   border: #31d0aa;
 }

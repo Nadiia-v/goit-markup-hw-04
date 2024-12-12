@@ -114,6 +114,7 @@ img {
 }
 .link-studio {
   position: relative;
+  color: #404bbf;
 }
 
 .link-studio::after {
@@ -159,6 +160,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .title {
@@ -230,18 +233,15 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
-.icons {
-  box-sizing: border-box;
-  width: 264px;
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
   background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
   margin-bottom: 8px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .list-title {
@@ -317,11 +317,15 @@ img {
   color: #434455;
 }
 
+.social-links-team {
+  display: flex;
+}
+
 .icon-links-team {
   list-style-type: none;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: row;
   gap: 24px;
 }
@@ -329,8 +333,15 @@ img {
 .list-icons-team {
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
   border: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -343,8 +354,8 @@ img {
   fill: #f4f4fd;
 }
 
-.list-icons-team:hover,
-.list-icons-team:focus {
+.icon-link:hover,
+.icon-link:focus {
   background-color: #404bbf;
   border: #404bbf;
 }
@@ -395,20 +406,16 @@ img {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.overlay-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 40px;
-  margin-left: 32px;
-  margin-right: 32px;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .overlay {
@@ -448,7 +455,6 @@ img {
 }
 .page-footer {
   background-color: #2e2f42;
-  padding-left: 156px;
   padding: 100px 0;
 }
 
@@ -456,17 +462,17 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: baseline;
   justify-content: baseline;
-  gap: 120px;
 }
+
 .logo-container {
-  margin: auto;
+  margin-right: 120px;
 }
 
 .footer-logo {
@@ -526,7 +532,7 @@ img {
   gap: 16px;
 }
 
-.footer-list-item {
+.footer-link {
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
